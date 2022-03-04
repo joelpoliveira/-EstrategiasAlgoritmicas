@@ -22,6 +22,7 @@ def count(x, y, steps_left):
     if board[x+200][y+200] == False:
         board[x+200][y+200] = True
         v=1
+        
     cache[(x,y)] = steps_left
     return v + count( x+2, y-1, steps_left - 1) + count( x+2, y+1, steps_left - 1) + count( x+1, y+2, steps_left - 1) + count( x-1, y+2, steps_left - 1)+count( x-2, y+1, steps_left - 1) + count( x-2, y-1, steps_left - 1) + count( x-1, y-2, steps_left - 1) + count( x+1, y-2, steps_left - 1) 
 
