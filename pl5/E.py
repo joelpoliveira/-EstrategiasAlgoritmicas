@@ -1,5 +1,4 @@
 from sys import stdin, stdout
-from turtle import tiltangle
 
 def read_all():
 	return stdin.readlines()
